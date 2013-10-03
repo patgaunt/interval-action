@@ -28,7 +28,7 @@
     function setCookie(cookieName, cookieValue, actionInterval) {
         var exDate = new Date();
         exDate.setDate(exDate.getDate() + actionInterval);
-        var c = escape(cookieValue) + ((actionInterval == null) ? "" : "; expires=" + exDate.toUTCString());
+        var c = escape(cookieValue) + ";path=/;" + ((actionInterval == null) ? "" : "expires=" + exDate.toUTCString());
         document.cookie = cookieName + "=" + c;
     }
 
