@@ -48,7 +48,7 @@
         } else {
             if (countCookie != null && countCookie < settings.actionCount && expirationCookie == null) {
                 var runCount = parseInt(countCookie) + 1;
-                setCountAndExpiration(settings.cookieName, runCount, settings.interval);
+                setCountAndExpiration(settings.cookieName, runCount, settings.actionInterval);
             } else {
                 return false;
             }
